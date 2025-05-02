@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "2737bd1a-42fd-49b2-a3da-9ccc7fd841f8",
+		"name": "Pokoe Melu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7987637",
+		"_collection_link": "https://restless-star-754827.postman.co/workspace/Team-Workspace~c3034d22-e23a-4fa2-84a5-2850ed710ec8/collection/7987637-2737bd1a-42fd-49b2-a3da-9ccc7fd841f8?action=share&source=collection_link&creator=7987637"
+	},
+	"item": [
+		{
+			"name": "agenda",
+			"item": [
+				{
+					"name": "Get All Agenda",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/agenda",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"agenda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Agenda",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"ziarah 2024\",\n  \"agendaDate\": \"2025-09-18\",\n  \"status\": \"active\",\n  \"createDate\": \"2025-05-01T01:00:00\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/agenda",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"agenda"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "bus",
+			"item": [
+				{
+					"name": "Get All Bus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/bus",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"bus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Bus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"BUS 3\",\n  \"agendaId\": 4,\n  \"capacity\": 32,\n  \"note\": \"TEst\",\n  \"createDate\": \"2025-05-01T01:00:00\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/bus",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"bus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "address",
+			"item": [
+				{
+					"name": "Get All Address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/address",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Address",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"village\": \"Ngluwar\", // Desa\n  \"ward\": \"Ngluwar\", // Kelurahan\n  \"subdistrict\": \"Ngluwar\", // Kecamatan\n  \"regency\": \"Magelang\", // Kabupaten\n  \"province\": \"Jawa Tengah\", // Provinci\n  \"postalCode\": \"56485\" // Kode Pos\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/address",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"address"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "member",
+			"item": [
+				{
+					"name": "Get All Member",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/member",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"member"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Member",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Suhir\",\n  \"phoneNumber\": \"085868226721\",\n  \"addressId\": 3,\n  \"note\": \"Test Member 1\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/member",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"member"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "Get All Order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/order",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"memberId\": 3, // ID Member\n  \"status\": \"HAS PAID\", // HAS PAID, CANCEL, DP\n  \"setNumber\": \"1A\", // SEAT NUMBER \n  \"busId\": 3, // ID BUS \n  \"trxDate\": \"2025-05-01T10:30:00\",\n  \"agendaId\": 7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/order",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
